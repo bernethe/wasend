@@ -1,0 +1,19 @@
+{
+  "name": "wasend",
+  "version": "1.0.0",
+  "description": "Send WhatsApp messages to phone numbers that you do not have in your contacts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernethe/wasend.git"
+  },
+  "author": "Harold Bernethe Soto González @bernethe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bernethe/wasend/issues"
+  },
+  "homepage": "https://github.com/bernethe/wasend#readme"
+}
