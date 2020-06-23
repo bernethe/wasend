@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/index.js"],"names":[],"mappings":"AAAA;;AAEA,IAAM,IAAI,GAAG,SAAP,IAAO,GAAM,CAAE,CAArB;;AACA,QAAQ,CAAC,gBAAT,CAA0B,kBAA1B,EAA8C,IAA9C,EAAoD,CAAC,CAArD","file":"wasend.js","sourcesContent":["'use strict';\n\nconst main = () => {};\ndocument.addEventListener('DOMContentLoaded', main, !1);"]}

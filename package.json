@@ -4,7 +4,8 @@
   "description": "Send WhatsApp messages to phone numbers that you do not have in your contacts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "babel src --out-file wasend.js --source-maps",
+    "build": "babel src --out-file wasend.js --source-maps && minify wasend.js --out-file wasend.js --mangle.keepClassName"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/bernethe/wasend/issues"
   },
-  "homepage": "https://github.com/bernethe/wasend#readme"
+  "homepage": "https://github.com/bernethe/wasend#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-minify": "^0.5.1"
+  }
 }

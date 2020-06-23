@@ -1,0 +1,1 @@
+'use strict';var main=function(){};document.addEventListener("DOMContentLoaded",main,!1);
