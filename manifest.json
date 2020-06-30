@@ -1,0 +1,48 @@
+{
+    "name": "WASend",
+    "short_name": "WASend",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "description": "Send WhatsApp messages to phone numbers that you do not have in your contacts",
+    "icons": [{
+        "src": "img/ico-048.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-057.png",
+        "sizes": "57x57",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-072.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-114.png",
+        "sizes": "114x114",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-180.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }, {
+        "src": "img/ico-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+}

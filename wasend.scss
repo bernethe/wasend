@@ -1,4 +1,104 @@
+@mixin xlink {
+	&, &:link, &:active, &:hover, &:visited {@content;}
+}
+
+* {
+    box-sizing: border-box;
+    transition: all .25s linear;
+}
 body, html {
     margin: 0;
     min-height: 100vh;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    overscroll-behavior: contain;
+}
+.cont {
+    .screen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+
+        & button {
+            appearance: none;
+            background: transparent;
+            border: 1px solid rgba(#000,.05);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.3333%;
+            height: 14vh;
+            flex-grow: 1;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: rgba(#000,.5);
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: rgba(#000, .25);
+            }
+
+            & small {
+                display: block;
+                font-weight: normal;
+                font-size: .75rem;
+            }
+
+            & svg {
+                fill: currentColor;
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+            }
+            & * {
+                pointer-events: none;
+            }
+        }
+    }
+    & .cta {
+        text-align: center;
+        padding: 1.5em 0;
+        & a {
+            @include xlink {
+                text-decoration: none;
+                font-weight: 800;
+                font-size: 1.5rem;
+                color: rgba(#fff,.75);
+                background-color: rgba(#000, .5);
+                padding: .5em 1.5em;
+                border-radius: 1.5em;
+            }
+        }
+    }
+    & .ad {
+        padding: .5em 0;
+        & .banner-320x100 {
+            width: 320px;
+            height: 100px;
+            background-color: #06f;
+            margin: auto;
+        }
+    }
+}
+body {
+    &.light {
+        background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+    }
+    &.dark {
+        background: linear-gradient(to bottom, #333 0%, #000 100%);
+    }
 }
