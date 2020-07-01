@@ -125,7 +125,12 @@ footer.main-footer {
             width: 320px;
             height: 100px;
             background-color: #06f;
+            color: #fff;
             margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     &.light {
