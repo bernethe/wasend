@@ -46,6 +46,7 @@ footer.main-footer {
 }
 #WASend {
     border: 1px solid #CCC;
+    min-height: 100vh;
     @media screen and (max-width: 720px) {
         border: none;
     }
