@@ -17,7 +17,7 @@ body, html {
 footer.main-footer {
     margin-top: 3em;
     text-align: center;
-    
+
     & a.svg-link svg {
         @include xlink {
             fill: rgba(#000,.5);
@@ -45,6 +45,10 @@ footer.main-footer {
     }
 }
 #WASend {
+    border: 1px solid #CCC;
+    @media screen and (max-width: 720px) {
+        border: none;
+    }
     & .screen {
         display: flex;
         align-items: center;
@@ -122,12 +126,6 @@ footer.main-footer {
             background-color: #06f;
             margin: auto;
         }
-    }
-}
-#WASend {
-    border: 1px solid #CCC;
-    @media screen and (max-width: 720px) {
-        border: none;
     }
     &.light {
         background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
