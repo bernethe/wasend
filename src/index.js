@@ -14,7 +14,7 @@ const main = () => {
     context = new AudioContext();
     _pnum = '';
     _baseURL = 'https://wa.me/';
-    document.body.classList.add('light');
+    document.getElementById('WASend').classList.add('light');
     addEventListenerList(
         document.querySelectorAll('.btns button.btn-num'),
         'click',

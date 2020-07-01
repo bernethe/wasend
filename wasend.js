@@ -16,7 +16,7 @@ var main = function main() {
   context = new AudioContext();
   _pnum = '';
   _baseURL = 'https://wa.me/';
-  document.body.classList.add('light');
+  document.getElementById('WASend').classList.add('light');
   addEventListenerList(document.querySelectorAll('.btns button.btn-num'), 'click', appendNumber);
   addEventListenerList(document.querySelectorAll('.btns button.btn-act'), 'click', actionNum);
   document.addEventListener('keypress', logKey);

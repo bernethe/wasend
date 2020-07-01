@@ -14,8 +14,38 @@ body, html {
     font-size: 16px;
     overscroll-behavior: contain;
 }
+footer.main-footer {
+    margin-top: 3em;
+    text-align: center;
+    
+    & a.svg-link svg {
+        @include xlink {
+            fill: rgba(#000,.5);
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+}
 .cont {
-    .screen {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 480px auto;
+
+    @media screen and (max-width: 720px) {
+        display: block;
+    }
+}
+.about {
+    padding: 2em;
+
+    @media screen and (max-width: 720px) {
+        display: none;
+    }
+}
+#WASend {
+    & .screen {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -24,7 +54,7 @@ body, html {
         font-size: 1.5rem;
         font-weight: 100;
     }
-    .btns {
+    & .btns {
         display: flex;
         flex-wrap: wrap;
 
@@ -94,7 +124,11 @@ body, html {
         }
     }
 }
-body {
+#WASend {
+    border: 1px solid #CCC;
+    @media screen and (max-width: 720px) {
+        border: none;
+    }
     &.light {
         background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
     }
